@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🎵 Music Hub</div>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Open Menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Genres ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genres/pop.html">Pop</a></li>
+                        <li><a href="genres/rap.html">Rap</a></li>
+                        <li><a href="genres/rock.html">Rock</a></li>
+                        <li><a href="genres/jazz.html">Jazz</a></li>
+                        <li><a href="genres/classical.html">Classical</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="user-playlist">
+        <h2>به سایت موزیک هاب خوش آمدین</h2>
+        <ul id="playlist-tracks">
+            <!-- آهنگ‌های افزوده شده اینجا نمایش داده می‌شوند -->
+        </ul>
+    </section>
+
+    <section class="music-list">
+        <h1>Top 8 Tracks</h1>
+        <div class="tracks">
+            <!-- Example tracks -->
+            <div class="track">
+                <div class="track-info">
+                    <h3>Pop Track 1</h3>
+                    <p>Pop Artist</p>
+                </div>
+                <audio controls>
+                    <source src="pop1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="pop1.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Pop Track 2</h3>
+                    <p>Pop Artist</p>
+                </div>
+                <audio controls>
+                    <source src="pop2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="pop2.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Rap Track 1</h3>
+                    <p>Rap Artist</p>
+                </div>
+                <audio controls>
+                    <source src="rap1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="rap1.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Rap Track 2</h3>
+                    <p>Rap Artist</p>
+                </div>
+                <audio controls>
+                    <source src="rap2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="rap2.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Rock Track 1</h3>
+                    <p>Rock Artist</p>
+                </div>
+                <audio controls>
+                    <source src="rock1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="rock1.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Rock Track 2</h3>
+                    <p>Rock Artist</p>
+                </div>
+                <audio controls>
+                    <source src="rock2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="rock2.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Jazz Track 1</h3>
+                    <p>Jazz Artist</p>
+                </div>
+                <audio controls>
+                    <source src="jazz1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="jazz1.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+            <div class="track">
+                <div class="track-info">
+                    <h3>Jazz Track 2</h3>
+                    <p>Jazz Artist</p>
+                </div>
+                <audio controls>
+                    <source src="jazz2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a class="download-btn" href="jazz2.mp3" download>Download</a>
+                <button class="add-fav-btn">Add to Favorites</button>
+            </div>
+        </div>
+        <button><a class="view-more" href="page2.html">View More Tracks</a></button>
+    </section>
+
+    <section id="favorites">
+        <h2>Your Favorite Tracks ❤️</h2>
+        <ul id="favorite-tracks">
+            <!-- آهنگ‌های مورد علاقه اینجا اضافه می‌شوند -->
+        </ul>
+    </section>
+    
+    
+
+        <section id="playlists" class="playlists">
+            <h2>Playlists</h2>
+            <div class="playlist">
+                <h3>Chill Vibes</h3>
+                <p>Relax and unwind with these chill tunes.</p>
+            </div>
+            <div class="playlist">
+                <h3>Workout Hits</h3>
+                <p>Power through your workout with these beats.</p>
+            </div>
+            <!-- Add more playlists -->
+        </section>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Genres ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="genres/pop.html">Pop</a></li>
+                <li><a href="genres/rap.html">Rap</a></li>
+                <li><a href="genres/rock.html">Rock</a></li>
+                <li><a href="genres/jazz.html">Jazz</a></li>
+                <li><a href="genres/classical.html">Classical</a></li>
+                
+            </ul>
+        </li>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Music Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

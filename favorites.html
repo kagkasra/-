@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎵 Music Hub</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="favorites">
+        <h1>Your Favorite Tracks</h1>
+        <div id="favorite-tracks"></div>
+    </section>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const favoriteTracksContainer = document.getElementById("favorite-tracks");
+
+    // خواندن لیست ذخیره‌شده از LocalStorage
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (favorites.length === 0) {
+        favoriteTracksContainer.innerHTML = "<p>No favorite tracks yet.</p>";
+    } else {
+        favorites.forEach((track) => {
+            const trackElement = document.createElement("div");
+            trackElement.classList.add("track");
+
+            trackElement.innerHTML = `
+                <h3>${track.name}</h3>
+                <audio controls>
+                    <source src="${track.src}" type="audio/mpeg">
+                </audio>
+            `;
+
+            favoriteTracksContainer.appendChild(trackElement);
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
